@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 
-const uri = process.env.MONGODB_URI || "mongodb+srv://kartiiktyagi:s5igFA6Sb7dtTgsv@cluster0.amewvdx.mongodb.net/?retryWrites=true&w=majority" ;
+const uri =  "mongodb+srv://kartiiktyagi:s5igFA6Sb7dtTgsv@cluster0.amewvdx.mongodb.net/?retryWrites=true&w=majority" ;
 const client = new MongoClient(uri);
 
 async function connectDB() {
